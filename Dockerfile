@@ -10,4 +10,4 @@ RUN pnpm i --frozen-lockfile
 COPY src tsconfig.json ./
 RUN pnpm run build
 
-CMD [ "node", "." ]
+CMD [ "pnpm", "run", "start" ]
